@@ -1,0 +1,9 @@
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Thank you for your message!");
+    this.reset(); // Reset the form after submission
+});
+
+function scrollToContact() {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+}
